@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time Stock Portfolio Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Real-Time Stock Portfolio Tracker</h1>
+
+    <div class="portfolio-management">
+      <h2>Manage Portfolio</h2>
+      <input type="text" id="stockSymbol" placeholder="Enter stock symbol (e.g., AAPL)">
+      <button onclick="addStock()">Add Stock</button>
+
+
+      <ul id="portfolioList"></ul> 
+
+
+    </div>
+
+    <div class="stock-data">
+      <h2>Stock Prices</h2>
+      <div id="stockPrices"></div>
+    </div>
+
+    <div class="chart-container">
+      <h2>Price Comparison Chart</h2>
+      <canvas id="comparisonChart"></canvas>
+    </div>
+
+    
+    <div class="news-section">
+      <h2>Latest News</h2>
+      <div id="news"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
